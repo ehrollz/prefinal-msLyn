@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER AVAILABLE PRODUCTS</title>
+    <link rel="stylesheet" href="user_availableproducts.css">
+    <link rel="shortcut icon" href="cannabis-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+        .fa-cannabis{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="admin-header">
+        <div><H2><i class="fa-solid fa-house"></i>
+            USER</H2></div>
+
+            <div class="navigation">
+        <a href="usersboard.html">HOME</a>
+        <a href="user_availableproducts.html">AVAILABLE PRODUCTS</a>
+        <a href="userhistory.html">USER HISTORY</a>
+        <a onclick="logOut()" >LOGOUT</a>
+            </div>
+    </header>
+    
+    <div class="container">
+
+        <div class="choices">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>IMAGE</th>
+                    <th>NAME</th>
+                    <th>PRICE</th>
+                    <th>QUANTITY</th>
+                    <th>DESCRIPTION</th>
+                    <th>EDITED_AT</th>
+                    <th>CREATED_AT</th>
+                    <th>STATUS</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <!-- Modal for displaying product details -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2 id="modalProductName"></h2>
+            <img id="modalProductImage" style="width: 300px; height: 300px;">
+            <p><strong>Price:</strong> <span id="modalProductPrice"></span></p>
+            <p><strong>Quantity:</strong> <span id="modalProductQuantity"></span></p>
+            <p><strong>Description:</strong> <span id="modalProductDescription"></span></p>
+        </div>
+    </div>
+
+    <!-- Interactive Background -->
+    <div class="interactive-background">
+        <div class="bullet bullet-1"></div>
+        <div class="bullet bullet-2"></div>
+        <div class="bullet bullet-3"></div>
+        <div class="bullet bullet-4"></div>
+        <div class="bullet bullet-5"></div>
+        <div class="bullet bullet-6"></div>
+        <div class="bullet bullet-7"></div>
+        <div class="bullet bullet-8"></div>
+        <div class="bullet bullet-9"></div>
+        <div class="bullet bullet-10"></div>
+        <div class="bullet bullet-11"></div>
+        <div class="bullet bullet-12"></div>
+        <div class="bullet bullet-13"></div>
+        <div class="bullet bullet-14"></div>
+        <div class="bullet bullet-15"></div>
+        <div class="bullet bullet-16"></div>
+        <div class="bullet bullet-17"></div>
+        <div class="bullet bullet-18"></div>
+        <div class="bullet bullet-19"></div>
+        <div class="bullet bullet-20"></div>
+    </div>
+
+    <script src="user_availableproducts.js"></script>
+</body>
+</html>

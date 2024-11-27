@@ -1,0 +1,163 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e8f5e9; /* Light green background */
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #4CAF50; /* Green color */
+    margin-bottom: 20px;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 10; /* Ensure form stays above the interactive background */
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {  /* Include email input here */
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: #f1f8e9; /* Light green background for inputs */
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus { /* Add focus effect for email input */
+    outline: none;
+    border-color: #66bb6a;
+    background-color: #d0f0c0;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+.login-link {
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+.login-link a {
+    color: #66bb6a;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Interactive Background - Cannabis Bubbles */
+.interactive-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.bullet {
+    position: absolute;
+    background-color: rgba(76, 175, 80, 0.5); /* Cannabis Green */
+    border-radius: 50%;
+    animation: moveBullet 10s infinite;
+    pointer-events: none;
+}
+
+.bullet-1 { width: 25px; height: 25px; top: 10%; left: 10%; animation-delay: 0s; }
+.bullet-2 { width: 20px; height: 20px; top: 15%; left: 30%; animation-delay: 1s; }
+.bullet-3 { width: 22px; height: 22px; top: 20%; left: 50%; animation-delay: 2s; }
+.bullet-4 { width: 18px; height: 18px; top: 30%; left: 70%; animation-delay: 3s; }
+.bullet-5 { width: 24px; height: 24px; top: 40%; left: 80%; animation-delay: 4s; }
+.bullet-6 { width: 20px; height: 20px; top: 50%; left: 15%; animation-delay: 5s; }
+.bullet-7 { width: 18px; height: 18px; top: 60%; left: 25%; animation-delay: 6s; }
+.bullet-8 { width: 26px; height: 26px; top: 70%; left: 35%; animation-delay: 7s; }
+.bullet-9 { width: 22px; height: 22px; top: 80%; left: 45%; animation-delay: 8s; }
+.bullet-10 { width: 25px; height: 25px; top: 90%; left: 55%; animation-delay: 9s; }
+.bullet-11 { width: 20px; height: 20px; top: 60%; left: 65%; animation-delay: 10s; }
+.bullet-12 { width: 18px; height: 18px; top: 40%; left: 75%; animation-delay: 11s; }
+.bullet-13 { width: 22px; height: 22px; top: 20%; left: 85%; animation-delay: 12s; }
+.bullet-14 { width: 24px; height: 24px; top: 30%; left: 95%; animation-delay: 13s; }
+.bullet-15 { width: 20px; height: 20px; top: 10%; left: 70%; animation-delay: 14s; }
+.bullet-16 { width: 18px; height: 18px; top: 25%; left: 20%; animation-delay: 15s; }
+.bullet-17 { width: 22px; height: 22px; top: 45%; left: 10%; animation-delay: 16s; }
+.bullet-18 { width: 20px; height: 20px; top: 65%; left: 80%; animation-delay: 17s; }
+.bullet-19 { width: 23px; height: 23px; top: 55%; left: 40%; animation-delay: 18s; }
+.bullet-20 { width: 18px; height: 18px; top: 75%; left: 50%; animation-delay: 19s; }
+
+@keyframes moveBullet {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-30px) scale(1.2);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}

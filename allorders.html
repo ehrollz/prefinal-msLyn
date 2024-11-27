@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL ORDERS</title>
+    <link rel="stylesheet" href="allorders.css">
+    <link rel="shortcut icon" href="cannabis-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+        .fa-cannabis{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="admin-header">
+        <div><H2><i class="fa-solid fa-house"></i>
+            ADMIN</H2></div>
+    
+            <div class="navigation">
+                <a href="adminboard.html">HOME</a>
+                <a href="usermanagement.html">USER MANAGEMENT</a>
+                <a href="addproduct.html">ADD PRODUCT</a>
+                <a href="allproducts.html">ALL PRODUCTS</a>
+                <a href="availableproducts.html">AVAILABLE PRODUCTS</a>
+                <a href="soldproducts.html">SOLD PRODUCTS</a>
+                <a href="allorders.html">ALL ORDERS</a>
+                <a onclick="logOut()" >LOGOUT</a>
+            </div>
+    </header>
+
+    <div class="container">
+
+        <div>
+            <LABEL>PRODUCT NAME</LABEL>
+            <input type="text" id="name" placeholder="Enter product name" required>
+    
+            <LABEL>PRICE</LABEL>
+            <input type="number" id="price" placeholder="Enter product price" required>
+
+            <LABEL>QUANTITY BOUGHT</LABEL>
+            <input type="number" id="quantity" placeholder="Enter quantity bought" required>
+
+            <LABEL>USER'S NAME</LABEL>
+            <input type="text" id="user" placeholder="Enter user's name" required>
+            
+            <button type="submit" id="submit">SEARCH</button>
+    
+        </div>
+
+        <div class="choices">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>PRODUCT NAME</th>
+                    <th>PRICE</th>
+                    <th>QUANTITY BOUGHT</th>
+                    <th>USER'S NAME</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+        
+        <!-- Container for the edit form -->
+        <div id="editContainer"></div>
+    </div>
+
+    <!-- Interactive Background -->
+    <div class="interactive-background">
+        <div class="bullet bullet-1"></div>
+        <div class="bullet bullet-2"></div>
+        <div class="bullet bullet-3"></div>
+        <div class="bullet bullet-4"></div>
+        <div class="bullet bullet-5"></div>
+        <div class="bullet bullet-6"></div>
+        <div class="bullet bullet-7"></div>
+        <div class="bullet bullet-8"></div>
+        <div class="bullet bullet-9"></div>
+        <div class="bullet bullet-10"></div>
+        <div class="bullet bullet-11"></div>
+        <div class="bullet bullet-12"></div>
+        <div class="bullet bullet-13"></div>
+        <div class="bullet bullet-14"></div>
+        <div class="bullet bullet-15"></div>
+        <div class="bullet bullet-16"></div>
+        <div class="bullet bullet-17"></div>
+        <div class="bullet bullet-18"></div>
+        <div class="bullet bullet-19"></div>
+        <div class="bullet bullet-20"></div>
+    </div>
+
+    <script src="allorders.js"></script>
+</body>
+</html>

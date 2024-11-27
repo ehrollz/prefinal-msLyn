@@ -1,0 +1,331 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.add {
+    font-family: 'Pacifico', cursive;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.add .form-group {
+    margin-bottom: 15px;
+}
+
+.add label {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.add input[type="text"],
+.add input[type="number"],
+.add input[type="file"],
+.add button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;  /* Ensures padding is inside the element's width */
+}
+
+.add input[type="text"],
+.add input[type="number"] {
+    background-color: #fff;
+    color: #333;
+}
+
+.add input[type="file"] {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+.add button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.add button:hover {
+    background-color: #45a049;
+}
+
+.add input:focus,
+.add button:focus {
+    outline: none;
+    border: 2px solid #81C784; /* Light green border for focus */
+}
+
+
+
+/* Header Styles */
+.admin-header {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32); /* Green gradient */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #1b5e20; /* Dark green border for separation */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title Section */
+.header-title h2 {
+    font-size: 28px; /* Larger font size for emphasis */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #FFD700; /* Gold color to highlight "ADMIN" */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect for depth */
+    letter-spacing: 1px; /* Slight letter spacing for a more dynamic look */
+}
+
+.header-title h2 i {
+    margin-right: 8px; /* Spacing for the house icon */
+    font-size: 1.8em; /* Slightly larger icon */
+}
+
+/* Navigation Links */
+.navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #1b5e20; /* Dark green for hover effect */
+}
+
+/* About Us Section */
+.about-us-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure it takes full viewport height */
+    background-color: #e8f5e9; /* Soft background color for the section */
+}
+
+.logo-container {
+    width: 250px; /* Set the width of the container */
+    height: 250px; /* Set the height of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+.cannabis-logo {
+    width: 200%; /* Make the logo take up the full container width */
+    height: 200%; /* Make the logo take up the full container height */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the logo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow to make the logo pop */
+}
+
+/* Hover Effect on Logo */
+.logo-container:hover {
+    transform: scale(1.2); /* Slightly enlarge the logo when hovered */
+}
+
+/* Additional Effects */
+body {
+    background-color: #f1f8e9; /* Light green background for the body */
+}
+
+.navigation a:active {
+    background-color: #388e3c; /* Darker green when the link is clicked */
+}
+
+/* Footer */
+.footer {
+    background-color: #66bb6a; /* Cannabis green */
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer .socials {
+    margin-top: 1rem;
+}
+
+.footer .socials a {
+    margin: 0 0.5rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer .socials a:hover {
+    color: #f8e2e2;
+}
+
+.about-us-section {
+    justify-content: center;
+    text-align: center;
+}
+
+.about-us-text h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    color: #ffffff; /* Green color */
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+}
+
+.about-us-text p {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: #333;
+    max-width: 800px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    justify-content: space-evenly; /* Evenly spaces the links */
+    align-items: center; /* Vertically aligns the items in the center */
+    gap: 20px; /* Adds a gap between each link */
+    padding: 10px 0; /* Optional: Adds padding around the navigation */
+    background-color: #333; /* Optional: Background color for the nav */
+    background-color: #66bb6a; /* Cannabis green */
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+.navigation a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Removes underlines */
+    font-size: 16px; /* Font size */
+    padding: 10px 15px; /* Adds padding to the links */
+}
+
+.navigation a:hover {
+    background-color: #4CAF50; /* Darker green on hover */
+    border-radius: 5px; /* Adds rounded corners */
+}
+
+    
+/* Title Styling */
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ffffff; /* Green color */
+    text-align: center;
+    font-size: 48px; /* Large font size for title */
+    text-transform: uppercase; /* Making the title uppercase */
+    margin-bottom: 29px;
+}
+
+
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 20px; /* Space between buttons */
+    justify-content: space-evenly; /* Evenly space buttons */
+    align-items: center; /* Center buttons horizontally */
+}
+
+/* Button Styling */
+button {
+    padding: 15px;
+    background-color: #66bb6a; /* Cannabis green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%; /* Ensure buttons stretch to full container width */
+    max-width: 250px; /* Max width to maintain consistency */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    background-color: #4CAF50; /* Darker green on hover */
+    transform: translateY(-5px); /* Slight upward movement */
+}
+
+/* Logout Button Styling */
+.logout-btn {
+    background-color: #e74c3c; /* Red for logout */
+}
+
+.logout-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+
+/* Interactive Background - Cannabis Bubbles */
+.interactive-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.bullet {
+    position: absolute;
+    background-color: rgba(76, 175, 80, 0.5); /* Cannabis Green */
+    border-radius: 50%;
+    animation: moveBullet 10s infinite;
+    pointer-events: none;
+}
+
+.bullet-1 { width: 25px; height: 25px; top: 10%; left: 10%; animation-delay: 0s; }
+.bullet-2 { width: 20px; height: 20px; top: 15%; left: 30%; animation-delay: 1s; }
+.bullet-3 { width: 22px; height: 22px; top: 20%; left: 50%; animation-delay: 2s; }
+.bullet-4 { width: 18px; height: 18px; top: 30%; left: 70%; animation-delay: 3s; }
+.bullet-5 { width: 24px; height: 24px; top: 40%; left: 80%; animation-delay: 4s; }
+.bullet-6 { width: 20px; height: 20px; top: 50%; left: 15%; animation-delay: 5s; }
+.bullet-7 { width: 18px; height: 18px; top: 60%; left: 25%; animation-delay: 6s; }
+.bullet-8 { width: 26px; height: 26px; top: 70%; left: 35%; animation-delay: 7s; }
+.bullet-9 { width: 22px; height: 22px; top: 80%; left: 45%; animation-delay: 8s; }
+.bullet-10 { width: 25px; height: 25px; top: 90%; left: 55%; animation-delay: 9s; }
+.bullet-11 { width: 20px; height: 20px; top: 60%; left: 65%; animation-delay: 10s; }
+.bullet-12 { width: 18px; height: 18px; top: 40%; left: 75%; animation-delay: 11s; }
+.bullet-13 { width: 22px; height: 22px; top: 20%; left: 85%; animation-delay: 12s; }
+.bullet-14 { width: 24px; height: 24px; top: 30%; left: 95%; animation-delay: 13s; }
+.bullet-15 { width: 20px; height: 20px; top: 10%; left: 70%; animation-delay: 14s; }
+.bullet-16 { width: 18px; height: 18px; top: 25%; left: 20%; animation-delay: 15s; }
+.bullet-17 { width: 22px; height: 22px; top: 45%; left: 10%; animation-delay: 16s; }
+.bullet-18 { width: 20px; height: 20px; top: 65%; left: 80%; animation-delay: 17s; }
+.bullet-19 { width: 23px; height: 23px; top: 55%; left: 40%; animation-delay: 18s; }
+.bullet-20 { width: 18px; height: 18px; top: 75%; left: 50%; animation-delay: 19s; }
+
+@keyframes moveBullet {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-30px) scale(1.2);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
